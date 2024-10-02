@@ -1,0 +1,112 @@
+main {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	max-height: calc(100dvh - 70px);
+	overflow: hidden;
+
+	.player-container {
+		width: 100%;
+		max-width: 800px;
+		/* Adjust this value as needed */
+		margin: 0 auto;
+	}
+
+	.player {
+		position: relative;
+		width: 100%;
+		padding-top: 56.25%;
+		/* 16:9 aspect ratio */
+		margin: 2rem;
+
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 8px;
+		}
+
+		.toolbar {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			button {
+				width: 36px;
+				height: 36px;
+				background-color: transparent;
+				outline: none;
+				border-radius: 50%;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0.5rem;
+				background-color: rgba(0, 0, 0, 0.5);
+				border: 1px solid #1a1a1a;
+				cursor: pointer;
+
+				svg {
+
+					path,
+					rect {
+						fill: #fff;
+						stroke: #fff;
+					}
+				}
+			}
+
+			.player-timeline {
+				flex-grow: 1;
+				margin: 0 10px;
+				width: 100%;
+				height: 32px;
+
+				div {
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					background-color: #1a1a1a;
+					width: 100%;
+					height: 8px;
+					transition: all 300ms ease-in-out;
+					border-radius: 1rem;
+
+					&:hover {
+						height: 16px;
+					}
+
+					.time-passed {
+						height: 100%;
+						width: 0%;
+						background-color: #ffffff;
+						transition: all 150ms ease-in-out;
+						border-radius: 10px;
+					}
+
+					velt-comment-player-timeline {
+						position: relative;
+						top: -180%;
+					}
+				}
+			}
+
+			velt-comment-tool,
+			velt-reaction-tool {
+				background-color: rgba(0, 0, 0, 0.5);
+				border: 1px solid #1a1a1a;
+				border-radius: 2rem;
+			}
+		}
+	}
+}
