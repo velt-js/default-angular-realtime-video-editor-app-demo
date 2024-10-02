@@ -11,6 +11,8 @@ In this demo, we are using Velt SDK to add frame by frame comments and reactions
 - Presence
 - Sidebar
 - Notifications
+- Huddle
+- Multiplayer Cursors
 
 ## Installation
 
@@ -23,6 +25,8 @@ npm install @veltdev/client
 ## Docs
 
 - [Video Commmenting](https://docs.velt.dev/async-collaboration/comments/setup/video-player-setup/video-player-setup)
+- [Huddle](https://docs.velt.dev/realtime-collaboration/huddle/overview)
+- [Multiplayer Cursors](https://docs.velt.dev/realtime-collaboration/cursors/overview)
 - For everything else read the [documentation](https://docs.velt.dev/get-started/overview) for guides and API References
 
 ## Other Links
